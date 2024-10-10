@@ -2,7 +2,7 @@ import s from "./Contact.module.css";
 import { FaUserTie } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 
-export default function Contact({ contact, onDelete }) {
+export default function ContactItem({ contact, onDelete }) {
   return (
     <li className={s.item}>
       <div className={s.wrap}>

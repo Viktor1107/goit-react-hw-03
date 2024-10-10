@@ -1,11 +1,11 @@
 import s from "./ContactList";
-import Contact from "../contact/contact";
+import ContactItem from "../Contact/Contact";
 
 export default function ContactList({ contacts, onDelete }) {
   return (
     <ul className={s.item}>
       {contacts.map((contact) => (
-        <Contact key={contact.id} contact={contact} onDelete={onDelete} />
+        <ContactItem key={contact.id} contact={contact} onDelete={onDelete} />
       ))}
     </ul>
   );

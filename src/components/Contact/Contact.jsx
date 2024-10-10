@@ -6,14 +6,14 @@ export default function Contact({ contact, onDelete }) {
   return (
     <li className={s.item}>
       <div className={s.wrap}>
-        <span>
+        <div className={s.span}>
           <p>
             <FaUserTie /> {contact.name}
           </p>
           <p>
             <FaPhone /> {contact.number}
           </p>
-        </span>
+        </div>
         <button className={s.btn} onClick={() => onDelete(contact.id)}>
           Delete
         </button>
